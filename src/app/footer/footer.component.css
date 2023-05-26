@@ -1,0 +1,40 @@
+#footer-div {
+    display: flex;
+    justify-content: center;
+    height: 1.5em;
+}
+
+#footer-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+}
+#heart {
+    position: relative;
+    top: 0.1em;
+    color:darkred;
+    font-size: 1.5em;
+}
+
+#love {
+    display: flex;
+    flex-direction: row;
+}
+
+#madeBy {
+    margin-left: 0;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: gray;
+}
+
+.footer-element {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}

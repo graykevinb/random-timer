@@ -1,5 +1,3 @@
-
-
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -17,6 +15,14 @@ h3 {
     text-align: center;
     font-size: 1.5rem;
     font-weight: bolder;
+}
+
+h1, p {
+  text-align: center;
+}
+
+p {
+  font-size: 1em;
 }
 
 button {

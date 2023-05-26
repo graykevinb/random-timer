@@ -7,7 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
+  <link rel="stylesheet" id="theme" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
+
+  <script>
+    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: light)");
+
+    const theme = document.querySelector("#theme");
+    if (prefersDarkScheme.matches) {
+      theme.href = "https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css";
+    } else {
+      theme.href = "https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-dark.min.css";
+    }
+  </script>
 </head>
 <body>
   <app-root></app-root>

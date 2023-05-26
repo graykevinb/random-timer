@@ -1,0 +1,16 @@
+div {
+    display: flex;
+    flex-direction: column;
+
+    height: fit-content;
+    width: min(50vw, 50vh);
+}
+
+:host {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}

@@ -1,5 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { ClockComponent } from '../clock/clock.component';
+import { TimerService } from '../timer.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-timer',
@@ -11,13 +13,14 @@ export class TimerComponent {
   @ViewChild('min', {static: true}) minClock!: ClockComponent;
   @ViewChild('max', {static: true}) maxClock!: ClockComponent;
 
-  startTimer() {
+  constructor(private timerService: TimerService, private router: Router) { }
+
+  async startTimer() {
     const minSeconds = this.minClock.totalSeconds;
     const maxSeconds = this.maxClock.totalSeconds;
+    
+    this.timerService.startTimer(minSeconds, maxSeconds);
 
-    const seconds = Math.random()*maxSeconds + minSeconds;
-    setTimeout(() => {
-      alert('Time is up!');
-    }, seconds*1000);
+    this.router.navigateByUrl('/patience');
   }
 }

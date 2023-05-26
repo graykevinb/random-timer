@@ -2,12 +2,15 @@
     <p class="grid-item">Hours</p>
     <p class="grid-item">Minutes</p>
     <p class="grid-item">Seconds</p>
+
     <button class="grid-item" (click)="addHour()">+</button>
     <button class="grid-item" (click)="addMinute()">+</button>
     <button class="grid-item" (click)="addSecond()">+</button>
+
     <p class="time grid-item">{{ dispHours }}:</p>
     <p class="time grid-item">{{ dispMinutes }}:</p>
-    <p class="time grid-item">{{ dispSeconds }}</p>
+    <p class="time grid-item">{{ dispSeconds }}&nbsp;</p>
+
     <button class="grid-item" (click)="subHour()">-</button>
     <button class="grid-item" (click)="subMinute()">-</button>
     <button class="grid-item" (click)="subSecond()">-</button>

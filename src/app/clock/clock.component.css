@@ -15,12 +15,12 @@ p {
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    white-space: nowrap;
-    width: min-content;
-
+    grid-gap: 0;
 }
 
-.grid-item {
-    padding-left: 0;
-    padding-right: 0;
+button {
+    font-size: 2em;
+    font-weight: bolder;
+    padding: 0;
+    width: calc(2.5*(100% / 3));
 }

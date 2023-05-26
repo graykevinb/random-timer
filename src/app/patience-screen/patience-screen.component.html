@@ -1,0 +1,11 @@
+<div>
+    <ng-template [ngIf]="isDone" [ngIfElse]="patience">
+        <p id="success">Done!</p>
+        <button routerLink="/">New Timer</button>
+    </ng-template>
+    
+    <ng-template #patience>
+        <p>We'll let you know when you're done!</p>
+    </ng-template>
+</div>
+
