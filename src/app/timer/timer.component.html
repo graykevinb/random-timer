@@ -1,0 +1,15 @@
+<div class="column">
+    <div class="flex-container">
+        <div class="clock-div">
+            <h3 >Min</h3>
+            <app-clock #min></app-clock>
+        </div>
+    
+        <div class="clock-div">
+            <h3>Max</h3>
+            <app-clock  #max [minutes]="5"></app-clock>
+        </div>
+    </div>
+    <button class="tertiary" (click)="startTimer()">Start Timer</button>
+</div>
+
